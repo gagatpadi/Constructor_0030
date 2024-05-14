@@ -6,12 +6,12 @@ class mahasiswa
 {
 public:
 	static int nim;
-		int id;
-		string nama;
+	int id;
+	string nama;
 
 	void setID();
 
-	void printALL();
+	void printAll();
 	mahasiswa(string pnama)
 	{
 		nama = pnama;
@@ -21,16 +21,15 @@ public:
 
 int mahasiswa::nim = 113;
 
-void mahasiswa::printALL()
+void mahasiswa::setID()
 {
 	id = nim++;
-		
 }
 
-void mahasiswa::printALL()
+void mahasiswa::printAll()
 {
-	cout << "ID  = " << id << endl;
-	cout << "Nama = " << nama << endl;
+	cout << "ID =" << id << endl;
+	cout << "Nama =" << nama << endl;
 	cout << endl;
 }
 
@@ -41,9 +40,11 @@ int main()
 	mahasiswa mhs3("Andi Kurniawan");
 	mahasiswa mhs4("Joko Purbo");
 
-	mhs1.printALL();
-	mhs2.printALL();
-	mhs3.printALL();
-	mhs4.printALL();
+
+	mhs1.printAll();
+
+	mhs2.printAll();
+	mhs3.printAll();
+	mhs4.printAll();
 	return 0;
 }
